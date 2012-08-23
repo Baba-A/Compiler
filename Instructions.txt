@@ -1,0 +1,32 @@
+Abubakar Awumbila
+Compiler Project - May 2011
+ReadMe file
+
+
+These are instructions for the use of this compiler:
+
+(A full description of this compiler can be found here :   )
+
+
+1. Write an input program based on the rules of the formal grammar. If you are unable to do so you can click on the 'test cases' link on this page which will provide you with  several correct and faulty test programs.
+
+2. Input your test program into the source code window. 
+
+3. click on the compile button. ( you can click on the 'your momma mode' button if you would like to have the compiler's output to be in the form of hilarious 'yo momma' jokes.
+
+4. If the test program parses correctly without any errors, the compiler will generate machin code.
+
+5. Click on the link to the JRC kernel to test the machine code genrated.
+
+6. On the JRC kernel page, clcik start.
+
+7. Copy and paste the machine code generated to the kernel window which says "machine code here".
+
+8. In the window on the left (light brown background), type: load ( to load the machine code into the kernel). Press enetr and the kernel should return a number (process id).
+
+9. Type: run num, where num is the process id number previously returned. ( If the process id returned is 0, type: run 0 ).
+
+10. The kernel should output the result of running the machine code.
+
+
+Thank you for taking the time to examine this project.
