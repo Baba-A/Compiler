@@ -1,4 +1,4 @@
-Compiler
+<a href="http://babaawumbila.com/babaawumbila.com/projects/Compiler/Awumbila-Compiler-Chrome:Safari Version/compiler.html" target="_blank">Compiler</a>
 ========
 
 I implemented a web based multi-pass compiler for a simple grammar developed in JavaScript. This compiler includes a lexer, parser, type checker, syntax tree and code generator.
