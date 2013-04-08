@@ -1,0 +1,144 @@
+
+<!DOCTYPE HTML> 
+<html> 
+
+<div class='nowiki' val=""><font color="purple">
+
+<body bgcolor="black">
+
+<head> 
+    <title>Your Momma Compiler</title> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="compiler.css" />     	
+</head> 
+<body onload="init();"> 
+    <h1> Abubakar Baba Awumbila </h1> 
+    <h1>Compiler Project - Your Momma Compiler</h1> 
+    <p> 				 
+ 
+   
+    </p> 	
+
+    <pre> 											
+
+This program is a multi-pass compiler for the following simple grammar:
+
+For Instructions: <a href="Instructions.txt">READ-ME</a>	
+
+==================================================================
+==								==
+==			GRAMMAR					==
+==								==
+==================================================================
+
+
+Program         ::== Statement $
+
+Statement       ::== print ( Expr )							<img style="float:right;" src="images/your-momma2.jpg" /> 
+	        ::== Id = Expr
+                ::== VarDecl
+                ::== { StatementList }
+                ::== ifExpr
+                ::== whileExpr
+                ::== comment
+
+StatementList   ::== Statement StatementList
+	 	::== ε
+
+Expr 		::== IntExpr
+		::== StringExpr
+		::== Id
+
+ifExpr          ::== if( condExpr ){ StatementList }
+
+whileExpr       ::== while( condExpr ){ StatementList }
+
+condExpr        ::== id condOp id
+		::== id
+-----------------------------------------------------
+NOTE: ID FOR CONDOP CAN ONLY BE USED FOR INTEGERS   |					
+-----------------------------------------------------
+comment  	::== // comExpr
+		::== /* comExpr */
+comExpr 	::== char comExpr
+		::== digit comExpr
+		::== op comExpr
+		::== condOp comExpr
+		::== space comExpr
+		::== ε
+
+IntExpr 	::== digit op Expr									   
+		::== digit
+
+StringExpr      ::== " CharList "
+
+CharList 	::== Char CharList
+		::== Space CharList				
+		::== ε
+
+VarDecl 	::== Type Id
+
+Type 		::== int | string
+Id 		::== Char									<img style="float:right;" src="images/your-momma.jpg" /> 
+
+Char 		::== a | b | c ... z
+Space		::== the space character
+digit	 	::== 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0
+op 		::== + | -
+condOp 		::== == 
+
+================================================================
+ 
+    </pre> 
+												
+    <h3>         
+        <a href="Test-Cases.txt">Test Cases</a>						 
+    <h3>
+    <br>
+  
+    <div> 
+    </pre> 
+
+ENTER SOURCECODE HERE:      
+
+    </pre> 
+     
+    </div>    
+    <div> 
+        <textarea id="taSourceCode" cols="45" rows="20"></textarea> 
+  
+   
+
+ 
+        <br> 
+        <input type="button" id="btnCompile" value="Compile" onclick="btnCompile_click();"/> 
+        <input type="button" id="yourMommabtnCompile" value="Your Momma Mode" onclick="yourMommabtnCompile_click();"/> 
+        <br> 
+COMPILER OUTPUT HERE:
+        <br>  
+        <textarea id="taOutput" cols="40" rows="20"></textarea> 
+        <textarea id="stOutput" cols="56" rows="20"></textarea> 
+        <textarea id="cgOutput" cols="43" rows="20"></textarea> 
+    </div> 
+    </div> 
+
+
+
+LINK TO JRC KERNEL HERE:    <a href="http://www.3nfconsulting.com/students/compilers/sites/JCOS/index.html">JRC KERNEL</a>
+    <!-- Footer --> 
+   
+    <!-- Client-side code down here, per the YSlow advice. 
+    // (http://developer.yahoo.com/performance/rules.html#js_bottom) --> 
+    <script type="text/javascript" src="scripts/utils.js"></script>	
+    <script type="text/javascript" src="scripts/lexer.js"></script>	
+    <script type="text/javascript" src="scripts/Parser.js"></script>	
+    <script type="text/javascript" src="scripts/codeGen.js"></script>	
+    <script type="text/javascript" src="scripts/yourMommaParser.js"></script>	
+
+    <script type="text/javascript"> 
+
+
+ 
+    </script> 
+</body> 
+</html> 

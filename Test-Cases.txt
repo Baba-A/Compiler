@@ -1,0 +1,218 @@
+
+
+Test Cases:
+
+Valid STATEMENTS: (should not generate any errors)
+
+// Should Output: 0
+{
+
+ int a
+ string b
+ print(a)      
+ print(b)
+
+}
+
+
+
+//Should output: 15alan
+{
+
+ int a
+ string b
+ a = 1+2+3+4+5
+ b = "alan"
+ print(a)
+ print(b)
+
+}
+
+//should output: 20compiler
+{
+
+ int a
+ string b
+ int c
+ string d
+ c = 5
+ a = 1+2+3+4+5+c
+ b = "alan"
+ d = "compiler"
+
+ print(a)
+ print(d)
+
+
+}
+
+//should output: 7
+{
+
+ int a
+ int b
+ a = 5
+ b = 2 +3
+ if( a == b ) { int c
+                c = 2 + a
+                print(c)
+              }
+
+}
+
+
+//should loop while prining: loop
+{
+
+ int a
+ int b
+ a = 8
+ b = 2 + 6
+ while( a == b ) { string c
+                c = "loop"
+                print(c)
+              }
+
+}
+
+
+
+
+
+
+
+
+InValid Statements : Should Generate Errors:
+
+Case: 1
+
+a = 2
+
+
+Case: 2
+
+a = 2 + 2
+
+
+Case: 3
+a = "zxcb"
+
+
+
+Case: 4
+a = 4 + a
+
+
+Case: 5
+{
+  int a
+  a = a
+  string b
+  a = b
+}
+
+
+
+Case: 6
+a = 12
+
+
+Case: 7
+{
+  int a
+  a = 3
+  {
+    string a
+    a = "bfgdfgd"
+   }
+   {
+    int a
+    a = 2+3+4
+    }
+}
+
+
+
+case: 8
+{
+
+   int a
+   a = 5
+   {
+     string a
+     a = "b"
+    }
+    int a
+    a = 1
+}
+
+
+
+
+Case: 9   ( Will Only give Warnings about unused Identifiers)
+{
+   int a
+   string b
+}
+
+
+
+
+Case: 10
+{
+  int a 
+  a = 4
+}
+}
+
+
+
+Case: 10
+{
+   int b
+   a = b
+}
+
+
+
+Case: 11
+{
+   int a
+   a = 1
+
+   {
+      int b
+       a = 4
+
+   }
+}
+
+
+Case: 12
+{
+   int a
+   a = 1
+
+   {
+      int b
+       a = b
+
+   }
+}
+
+
+
+Case: 13
+{
+   int a
+   a = 3
+   {
+       string b
+       int a
+       a = 5
+      
+   }
+}
+
+ 
+
